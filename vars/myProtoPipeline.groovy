@@ -5,7 +5,7 @@ def call(Map pipelineParams) {
         stages{
             stage('checkout git') {
                 steps {
-                    git branch: master, url: pipelineParams.scmUrl
+                    git branch: 'master', url: pipelineParams.scmUrl
                 }
             }
         }
